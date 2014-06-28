@@ -53,7 +53,7 @@ See http://dev.perl.org/licenses/ for more information.
 package Catmandu::Store::CHI;
 
 {
-  $Catmandu::Store::CHI::VERSION = '0.01';
+  $Catmandu::Store::CHI::VERSION = '0.02';
 }
 
 use Moo;
