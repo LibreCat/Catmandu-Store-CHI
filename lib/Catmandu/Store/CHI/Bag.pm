@@ -13,7 +13,6 @@ sub _build_chi {
     my $driver = $self->store->driver;
     my $opts   = $self->store->opts;
     my $name   = __PACKAGE__ . '::' . $self->name;
-
     CHI->new(namespace => $name , driver => $driver, %$opts);
 }
 
