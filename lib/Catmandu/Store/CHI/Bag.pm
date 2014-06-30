@@ -1,6 +1,7 @@
 package Catmandu::Store::CHI::Bag;
 
 use Moo;
+use CHI;
 use Data::UUID;
 use Data::Dumper;
 
