@@ -29,13 +29,19 @@ Catmandu::Store::CHI - a CHI backed caching store
 Create a new Catmandu::Store::CHI with a $chi\_driver and optional parameters. When no driver is given
 then by default the 'Memory' driver will be used. See [CHI](https://metacpan.org/pod/CHI) for more documentation on possible drivers.
 
-## bag($name)
+# INHERITED METHODS
 
-Create or retieve a bag with name $name. Returns a [Catmandu::Bag](https://metacpan.org/pod/Catmandu::Bag).
+This Catmandu::Store implements:
+
+- [Catmandu::Store](https://metacpan.org/pod/Catmandu::Store)
+
+Each Catmandu::Bag in this Catmandu::Store implements:
+
+- [Catmandu::Bag](https://metacpan.org/pod/Catmandu::Bag)
 
 # SEE ALSO
 
-[CHI](https://metacpan.org/pod/CHI), [Catmandu](https://metacpan.org/pod/Catmandu) , [Catmandu::Store](https://metacpan.org/pod/Catmandu::Store) , [Catmandu::Bag](https://metacpan.org/pod/Catmandu::Bag)
+[CHI](https://metacpan.org/pod/CHI)
 
 # AUTHOR
 
