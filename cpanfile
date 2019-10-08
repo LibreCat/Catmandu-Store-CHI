@@ -8,3 +8,4 @@ on 'test', sub {
 requires 'Catmandu', '0.9202';
 requires 'CHI', '0.58';
 requires 'Moo', '1.0';
+requires 'Data::UUID', '0';
