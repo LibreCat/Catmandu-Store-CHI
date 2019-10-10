@@ -24,7 +24,7 @@ my %module_build_args = (
   "recursive_test_files" => 1,
   "requires" => {
     "CHI" => "0.58",
-    "Catmandu" => "0.9202",
+    "Catmandu" => "1.000",
     "Moo" => "1.0",
     "perl" => "v5.10.1"
   },

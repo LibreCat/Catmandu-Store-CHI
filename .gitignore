@@ -10,3 +10,5 @@ MANIFEST*
 META.*
 MYMETA.*
 Catmandu-Store-*
+cpanfile.snapshot
+local

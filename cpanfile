@@ -5,7 +5,6 @@ on 'test', sub {
   requires 'Test::More', '1.001003';
 };
 
-requires 'Catmandu', '0.9202';
+requires 'Catmandu', '1.2001';
 requires 'CHI', '0.58';
 requires 'Moo', '1.0';
-requires 'Data::UUID', '0';

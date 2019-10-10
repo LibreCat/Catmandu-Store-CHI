@@ -2,12 +2,12 @@ package Catmandu::Store::CHI::Bag;
 
 use Moo;
 use CHI;
-use Data::UUID;
-use Data::Dumper;
+use Catmandu::IdGenerator::UUID;
 
 with 'Catmandu::Bag';
 
 has 'chi'    => (is => 'ro' , lazy => 1 , builder => 1);
+has 'idgen'  => (is => 'ro' , lazy => 1 , builder => 1);
 
 sub _build_chi {
     my ($self) = @_;
@@ -15,6 +15,10 @@ sub _build_chi {
     my $opts   = $self->store->opts;
     my $name   = __PACKAGE__ . '::' . $self->name;
     CHI->new(namespace => $name , driver => $driver, %$opts);
+}
+
+sub _build_idgen {
+    Catmandu::IdGenerator::UUID->new;
 }
 
 sub generator {
@@ -36,7 +40,7 @@ sub get {
 
 sub add {
     my ($self,$data) = @_;
-    $data->{_id} //= gen_id();
+    $data->{_id} //= $self->idgen->generate;
     my $id = $data->{_id};
     $self->chi->set($id,$data);
     return $data;
