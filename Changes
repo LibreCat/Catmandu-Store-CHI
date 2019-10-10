@@ -1,6 +1,8 @@
 Revision history for Catmandu-Store-CHI
 
 {{$NEXT}}
+
+0.04  2019-10-10 20:37:45 CEST
   - fixing dependencies
   
 0.03  2019-10-10 16:33:52 CEST

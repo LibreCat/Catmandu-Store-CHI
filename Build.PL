@@ -18,7 +18,7 @@ my %module_build_args = (
     "Patrick Hochstenbach, C<< <patrick.hochstenbach at ugent.be> >>"
   ],
   "dist_name" => "Catmandu-Store-CHI",
-  "dist_version" => "0.03",
+  "dist_version" => "0.04",
   "license" => "perl",
   "module_name" => "Catmandu::Store::CHI",
   "recursive_test_files" => 1,
@@ -29,6 +29,7 @@ my %module_build_args = (
     "perl" => "v5.10.1"
   },
   "test_requires" => {
+    "Test::Exception" => 0,
     "Test::More" => "1.001003",
     "Test::Simple" => "1.001003"
   }
@@ -37,6 +38,7 @@ my %module_build_args = (
 
 my %fallback_build_requires = (
   "Module::Build" => "0.28",
+  "Test::Exception" => 0,
   "Test::More" => "1.001003",
   "Test::Simple" => "1.001003"
 );
