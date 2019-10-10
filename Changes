@@ -1,6 +1,8 @@
 Revision history for Catmandu-Store-CHI
 
 {{$NEXT}}
+
+0.03  2019-10-10 16:33:52 CEST
   - removing Data::UUID dependency
   - cosmetic changes
 

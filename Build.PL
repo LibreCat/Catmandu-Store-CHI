@@ -18,13 +18,13 @@ my %module_build_args = (
     "Patrick Hochstenbach, C<< <patrick.hochstenbach at ugent.be> >>"
   ],
   "dist_name" => "Catmandu-Store-CHI",
-  "dist_version" => "0.02",
+  "dist_version" => "0.03",
   "license" => "perl",
   "module_name" => "Catmandu::Store::CHI",
   "recursive_test_files" => 1,
   "requires" => {
     "CHI" => "0.58",
-    "Catmandu" => "1.000",
+    "Catmandu" => "1.2001",
     "Moo" => "1.0",
     "perl" => "v5.10.1"
   },
